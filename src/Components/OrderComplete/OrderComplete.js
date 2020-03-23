@@ -2,7 +2,9 @@ import React from 'react';
 import MapImg from '../../Images/ordercomplete.png';
 import Rider from '../../Images/Image/rider.png';
 import RiderHalmet from '../../Images/Image/helmet.png';
+import { useAuth } from '../SignUp/useAuth';
 const OrderComplete = (props) => {
+    const auth = useAuth();
     return (
         <div className="container my-5">
             <div className="row">
@@ -19,17 +21,18 @@ const OrderComplete = (props) => {
                             </div>
                             <div>
                                 <h5>Shop Address</h5>
-                                <p>Star Kabab and Restaura</p>
+                                <p>Red Onion Restaurant</p>
                             </div>
                         </div>
-                        <h1>09:00</h1>
+                        <h1>08:00</h1>
                         <p>Estimated Delivery</p>
 
                         <div className="bg-white rounded p-3 d-flex">
                             <img className="w-25 mr-2" src={RiderHalmet} alt=""/>
                             <div>
-                                <h6>Hamim</h6>
-                                <p>Your Rider</p>
+                                <p><small>Ordered by</small></p>
+                               <h4>{auth.user.displayName}</h4>
+                                
                             </div>
                         </div>
 

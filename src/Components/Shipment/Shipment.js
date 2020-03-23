@@ -23,12 +23,12 @@ const Shipment = (props) => {
         <div className="shipment container my-5">
             <div className="row">
                 <div className="col-md-5">
-                    <h4>Edit Delivery Details</h4>
+                    <h4>Edit Details</h4>
                     <hr/>
                     <form onSubmit={handleSubmit(onSubmit)} className="py-5">
                     
                         <div className="form-group">
-                            <input name="todoor" className="form-control" ref={register({ required: true })} defaultValue={todoor} placeholder="Delivery To Door"/>
+                            <input name="todoor" className="form-control" ref={register({ required: true })} defaultValue={todoor} placeholder="Deliver To Door"/>
                             {errors.todoor && <span className="error">This Option is required</span>}
                         </div>
                         <div className="form-group">
@@ -55,7 +55,7 @@ const Shipment = (props) => {
                 </div>
                 <div className="offset-md-2 col-md-5">
                     <div className="restaurant-info mb-5">
-                        <h4>Form <strong> Star Kabab And Restaura</strong></h4>
+                        <h4>Form <strong> Red Onion Foods</strong></h4>
                         <h5>Arriving in 20-30 min</h5>
                         <h5>107 Rd No 9</h5>
                     </div>

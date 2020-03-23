@@ -31,11 +31,11 @@ function App() {
     setCart([])
   }
   const cartHandler = (data) => {
-    const alreadyAdded = cart.find(crt => crt.id == data.id );
+    const alreadyAdded = cart.find(crt => crt.id === data.id );
     const newCart = [...cart,data]
     setCart(newCart);
     if(alreadyAdded){
-      const reamingCarts = cart.filter(crt => cart.id != data);
+      const reamingCarts = cart.filter(crt => cart.id !== data);
       setCart(reamingCarts);
     }else{
       const newCart = [...cart,data]
