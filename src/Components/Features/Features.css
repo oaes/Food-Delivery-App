@@ -1,0 +1,8 @@
+.features .card{
+    border: none;
+}
+
+.features .card:hover{
+    box-shadow: 0px 7px 10px #f2f2f3;
+    border-radius: 15px;
+}
