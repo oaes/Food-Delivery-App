@@ -7,7 +7,7 @@ import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons'
 import { useAuth } from '../SignUp/useAuth';
 const Header = (props) => {
     const auth = useAuth();
-
+    
     return (
         <nav className="navbar navbar-expand navbar-light bg-white my-2">
             <div className="container">
@@ -16,6 +16,8 @@ const Header = (props) => {
                 </Link>
                
                 <ul className="navbar-nav align-items-center">
+
+
                     <li className="nav-item active">
                         <Link to="/checkout" className="nav-link"><FontAwesomeIcon className="cart-icon" icon={faCartArrowDown} /><span className="badge bg-light">{props.cart.length}</span></Link>
                     </li>
