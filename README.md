@@ -1,4 +1,4 @@
-## Restaurant App
+## Restaurant App <> Full-stack
 ---
 <a href="https://ibb.co/WcgtHnF"><img src="https://i.ibb.co/Vv2mLVD/restaurant.jpg" alt="restaurant" border="0"></a>
 
